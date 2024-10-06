@@ -1,14 +1,57 @@
+@media screen and (max-width: 1000px) {
+    .banner-section {
+        margin-left: 60px;
+
+        & h1 {
+            font-size: 70px;
+        }
+    }
+
+    .target-section {
+        .target-section-details p {
+            padding: 40px 20px;
+            font-size: 22px;
+        }
+
+        .target-section-details-button {
+            & span {
+                padding: 0;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .track-section {
+
+        .track-left-section {
+
+            & h2 {
+                font-size: 70px;
+            }
+        }
+        .track-right-section {
+
+            & h3 {
+                font-size: 35px;
+                padding-inline: 1rem;
+            }
+        }
+    }
+}
+
 /* Responsive for mobile */
 @media screen and (max-width: 767px) {
     /* Common css style start */
     .container {
         padding: 0 16px;
     }
+
     .between {
         gap: 3rem;
         grid-template-columns: repeat(1, minmax(0, 1fr));
         margin-top: 50px;
     }
+
     /* Common css style end */
     .banner-section {
         padding: 60px 16px;
@@ -24,9 +67,9 @@
             font-size: 20px;
         }
     }
+
     .track-section {
         .track-bg {
-            left: 0;
             width: 100%;
         }
 
@@ -62,9 +105,11 @@
             }
         }
     }
+
     .company {
         margin-top: 50px;
     }
+
     /* Join Section */
     .join {
         margin: 80px auto;
